@@ -22,4 +22,4 @@
 * React-spring (animation library)
 * React-slick (corouel)
 
-[DEMO](https://my-app-rho-lime.vercel.app/)
+[DEMO](https://last-hero-react1.vercel.app/)
