@@ -97,12 +97,6 @@
         align-items: center;
         height: 80%;
        }
-
-
-       div.styles_container__CB96g{
-        padding: 0;
-        margin: 0;
-    }
    }
 
    &__animation-left{
@@ -134,4 +128,9 @@
     @include desktop(){
         height: 637px;
     }
+}
+
+div.styles_container__CB96g{
+    padding: 0px !important;
+    margin: 0;
 }
