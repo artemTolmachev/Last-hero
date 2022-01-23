@@ -97,11 +97,19 @@
         align-items: center;
         height: 80%;
        }
+
+
+       div.styles_container__CB96g{
+        padding: 0;
+        margin: 0;
+    }
    }
 
    &__animation-left{
     padding-left: 20px;
     width: 230px;
+
+    
 
     @media(min-width: 436px){
         padding-left: 0;
@@ -110,6 +118,12 @@
     @include desktop(){
         width: 431px;
     }
+
+    div.styles_container__38iRH{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
    }
    &__animation-right{
        width: 190px;
@@ -128,9 +142,4 @@
     @include desktop(){
         height: 637px;
     }
-}
-
-div.styles_container__CB96g{
-    padding: 0px !important;
-    margin: 0;
 }
