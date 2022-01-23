@@ -1,0 +1,66 @@
+@import '../../scss/main.scss';
+
+.panelHidden {
+    height: 0;
+    transition: height 0.2s ease-out;
+
+    div{
+        display: none;
+    }
+  }
+  .panelClass {
+      border: 10px solid rgb(230, 228, 228);
+      margin: 10px;
+    grid-column: 6 span;
+    transition: 0.4s;
+  }
+  .accHead {
+      padding: 5px 10px;
+      background: #c0c0c0;
+      cursor: pointer;
+  }
+  .accBody {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #c0c0c0;
+      height: 270px;
+      transition: height 0.2s ease-in;
+      overflow: hidden;
+
+      @media(min-width: 320px){
+          height: 220px;
+      }
+      @media(min-width: 490px){
+        height: 130px;
+    }
+      @include tablet(){
+        height: 79px;
+      }
+
+      div{
+          padding: 0 10px;
+          font: var(--font-p);
+          color: black;
+      }
+    
+  }
+
+  .team-accordion{
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    @include tablet(){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+    h4{
+        font: var(--font-Eurostile-midl);
+        color: var(--color-main);
+    }
+}
+.accordion{
+    padding-top: 20px;
+}

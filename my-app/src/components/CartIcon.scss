@@ -1,0 +1,21 @@
+.cart{
+    &__caunt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+        width: 20px;
+        height: 20px;
+        top: -7px;
+        left: 17px;
+
+        font: var(--font-family);
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--color-main);
+        background-color: rgb(134, 220, 150);
+        border-radius: 50%;
+        
+    }
+}

@@ -1,0 +1,116 @@
+@import '../../scss/main.scss';
+.team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__inner{
+        position: relative;
+        padding-top: 50px;
+        background-color: #606a7c;
+        overflow: hidden;
+    }
+
+    &__decor-wr{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24vw;
+        height: 24vw;
+        border-radius: 50%;
+        background-color: var(--color-accent);
+        transform: translate(37%, -21%);
+
+        &::after{
+            position: absolute;
+            content: '';
+            top: -13vw;
+            right: 7vw;
+            width: 30vw;
+            height: 30vw;
+            border: 1px solid var(--color-white);
+            border-radius: 50%;
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: -3vw;
+            right: -13vw;
+            width: 30vw;
+            height: 30vw;
+            border: 1px solid var(--color-white);
+            border-radius: 50%;
+        }
+
+        @include tablet(){
+            display: block;
+        }
+    }
+    &__contain{
+        margin: 0 auto;
+
+        @media(max-width: 490px){
+            max-width: 254px;
+        }
+
+        @media(min-width: 490px){
+            width: 490px;
+        }
+        @include tablet(){
+            width: 768px;
+
+        }
+        @include desktop(){
+            width: 1000px;
+        }
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        font-size: 30px;
+        font-weight: 700;
+        color: #3b3b3b;
+
+        @include tablet(){
+            font-size: 45px;
+        }
+    }
+    &__item{
+        padding: 5px;
+        position: relative;
+        grid-column: 12 span;
+        font-size: 30vw;
+        @media(min-width: 490px){
+            grid-column: 6 span;
+        }
+
+         @include tablet(){
+            grid-column: 4 span;
+        }
+    }
+    img{
+        width: 216px;
+        height: 228px;
+        
+        @include desktop(){
+            width: 290px;
+            height: 305px;
+        }
+    }
+    &__name{
+        position: absolute;
+        bottom: 20px;
+        left: 17px;
+        font: var(--font-Eurostile-main);
+        color: #ededed;
+    }
+    &__gread{
+        padding-top: 25px;
+        padding-bottom: 100px;
+        gap: 20px;
+
+        @include tablet(){
+            padding-top: 50px;
+        }
+    }
+}

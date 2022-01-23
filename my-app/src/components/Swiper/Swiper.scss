@@ -1,0 +1,25 @@
+.SwiperSlide{
+    width: 100px;
+    height: 100px;
+}
+
+.slick-slider {
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    content: '';
+    text-align: center;
+}

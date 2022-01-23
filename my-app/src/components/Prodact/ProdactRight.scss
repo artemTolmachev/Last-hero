@@ -1,0 +1,142 @@
+@import '../../scss/main.scss'; 
+
+.prodact{
+    
+    &__right{
+        padding-top: 30px;
+        @include tablet(){
+            padding-top: 0;
+            width: 40%;
+        }
+    }
+    &__title{
+        font: var(--font-geth-midl);
+        color: #363b44;
+        letter-spacing: 1.5px;
+    }
+    &__subtitle{
+        font: var(--font-p);
+        color: #363b44;
+    }
+    &__cost{
+        font: var(--font-Eurostile-small);
+        color: #363b44;
+    }
+    &__color{
+        margin-top: 3px;
+        font: var(--font-p);
+        color: #363b44;
+
+        span{
+            font: var(--font-Eurostile-small);
+            color: #363b44;
+        }
+    }
+    &__size{
+        margin-top: 12px;
+        width: 80%;
+        font: var(--font-Eurostile-small);
+        color: #363b44;
+    }
+    &__size-block{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 10px
+        
+    }
+    &__block{
+        grid-column: 4 span;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+
+        font: var(--small-font);
+        border: 1px dashed #aaa;
+        background-color: var(--color-white);
+        color: var(--color-main);
+
+        overflow: hidden;
+        transition: border .2s ease-in;
+        cursor: pointer;
+        // &:hover{
+        //     border: 1px solid var(--color-main);
+        // }
+    }
+
+    &__hide{
+        background: linear-gradient(
+        145deg,#fafafa 0,#fafafa 49%,#999 50%,#fafafa 51%,#fafafa 100%);
+        background-color: rgba(218, 165, 32, 0.212);
+        color: #aaa;
+        pointer-events: none;
+    }
+    &__quantity{
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__input{
+        padding: 5px 10px;
+        height: 37px;
+        text-align: center;
+        border: 1px solid #ddd;
+        margin: 0 5px;
+        max-width: 70px;
+        outline:none
+    }
+    label{
+        margin-right: 8px;
+        font: var(--font-Eurostile-small);
+        color: #363b44;
+    }
+}
+.prodact__input:focus{
+    border: 1px solid #bbb;
+}
+button.prodact__btn{
+    width: 37px;
+    background-color: var(--color-white);
+    border: none;
+    
+    svg{
+        pointer-events: none;
+        background-color: var(--color-white);
+    }
+    path {
+        fill: rgb(141, 141, 141);
+    }
+}
+.checked{
+    position: relative;
+    border: 1px solid var(--color-green);
+    &::after {
+        content: "";
+        position: absolute;
+        right: 2px;
+        top: 0px;
+        width: 15px;
+        height: 15px;
+        box-sizing: border-box;
+        background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+}
+
+button.prodact__btn-cart{
+    margin-top: 10px;
+    width: 100%;
+    height: 52px;
+
+    background-color: var(--color-green);
+    font: var(--font-Eurostile-main);
+    letter-spacing: 1.7px;
+    color: var(--color-white);
+    text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+@import '../scss/main.scss';
+
+.goods__card {
+    padding: 7px;
+    border: 1px solid transparent;
+    transition: border .2s ease-in;
+    &-items{
+        padding-top: 20px;
+        padding-left: 9px;
+        display: flex;
+        flex-direction: column;
+    }  
+    &-title{
+        font: var(--font-Eurostile-small);
+        letter-spacing: 2px;
+        color: #444b58d1;
+    }
+    &-subtitle{
+        font: var(--font-geth-ex-smal);
+        color: black;
+    }
+    &-size{
+        margin-top: 2px;
+        font: var(--font-geth-ex-smal);
+        font-size: 11px;
+        color: black;
+    }
+    &-cost{
+        margin-top: 10px;
+        font: var(--font-Eurostile-small);
+        color: var(--color-main);
+    }
+    &:hover{
+        border: 1px solid #444b5869;
+
+    }
+}

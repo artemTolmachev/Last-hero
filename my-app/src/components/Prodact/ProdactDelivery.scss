@@ -1,0 +1,31 @@
+@import '../../scss/main.scss';
+
+.prodact__delivery{
+    padding: 20px;
+    border: 1px solid #444b5821;
+
+    @include tablet(){
+      width: 38%;
+    }
+
+    span {
+        font: var(--font-Eurostile-midl);
+        color: var(--color-main);
+    }
+
+    p{
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font: var(--small-font);
+        color: var(--color-main);
+    }
+
+    .deliv-icn{
+        margin-right: 9px;
+    }
+
+    &-in{
+        display: flex;
+        align-items: center;
+    }
+}

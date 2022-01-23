@@ -1,0 +1,46 @@
+@import '../scss/main.scss';
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 9;
+    pointer-events: none;//чтобы окно не перекрывало клик по бургеру
+    opacity: 0;//делаем изначально затемнение прозрачным
+    transition: 0.5s;
+    
+    &__content{
+        position: relative;
+        padding: 20px 0px;
+        border-radius: 5px;
+        background-color: var(--color-white);
+
+        transform: scale(0.5);
+        transition: 0.4s all;
+
+        &-btn{
+            position: absolute;
+            z-index: 100;
+            right: 16px;
+            top: 22px;
+        }
+
+    }
+    
+    &__content.show{
+        transform: scale(1);
+    }
+
+}
+.modal.show{ 
+    opacity: 1;//возвращаем видимость
+    pointer-events: all;//возвращаем кликабельность окна для отключения его по клику
+}

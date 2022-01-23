@@ -1,0 +1,49 @@
+@import '../../scss/main.scss';
+
+.filter{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #65a19f;
+    color: var(--color-main);
+    
+    .btn {
+        font-size: 16px;
+        background-color: var(--color-main);
+        color: white;
+
+        &:hover{
+            background-color: #444b58ad;
+        }
+        &:active{
+            background-color: var(--color-main);
+        }
+    }
+    &--reset{
+        margin-top: 10px;
+        font: var(--middle-font);
+        color: var(--color-main);
+        transition: 0.2s ease-in;
+        
+        &:hover{
+            color: var(--color-accent-dark);
+        }
+        &:active{
+            color: var(--color-accent);
+        }
+    }
+    h3{
+        font: var(--middle-s-font);
+        
+    }
+    strong{
+        color: #444b58ba;
+    }
+
+    @include mobile-extra(){
+                display: none;
+            }
+}
+.custom-checkbox {
+    @include custom-checkbox;
+}

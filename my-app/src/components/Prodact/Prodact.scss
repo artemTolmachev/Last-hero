@@ -1,0 +1,37 @@
+@import '../../scss/main.scss';
+.prodact{
+    padding: 50px 0;
+
+    @include desktop(){
+        padding: 80px 0;
+    }
+    &__main-content{
+        @include tablet(){
+            display: flex;
+        }
+    }
+
+    &__link{
+        font: var(--font-p);
+        color: #363b44;
+
+        &:hover {
+            text-decoration: underline;
+            color: #363b44;
+          }
+    }
+    &__link-wr{
+        padding: 10px 0;
+        font: var(--font-p);
+        color: #363b44;
+    }
+
+    &__bottom{
+        padding-top: 20px;
+        @include tablet(){
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+}

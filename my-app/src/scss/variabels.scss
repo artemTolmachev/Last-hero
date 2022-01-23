@@ -1,0 +1,54 @@
+
+// $app-background-color: rgb(170, 26, 26);
+
+:root {
+    // цвета
+    --color-main: #444b58;
+    --color-gray-main: #444b5821;
+    --color-gray: #ffffff23;
+    --color-gray-light: rgb(141, 141, 141);
+    --color-black: #000;
+    --color-white: #fff;
+    --color-eastbay: #484283;
+    --color-accent: #f14f4f;
+    --color-accent-dark: #b93939be;
+    --color-Cadet-blue: #0baccd;
+    --color-Cad-bl-hover: #195668;
+    --color-green: rgba(70, 176, 89, 0.979);
+    --color-green-light: #86dc96;
+
+    // отступы
+    --top-offset:15px;
+    --grid-gap: 20px;
+    --main-offset: 40px;
+    --big-offset: 80px;
+  
+    // шрифты
+
+    --font-family: "Intro", sans-serif;
+    --font-logo: 700 30px /200% var(--font-family);
+    --font-logo-mob: 700 20px /140% var(--font-family-log);
+    --middle-high-font: 700 30px / 140% var(--font-family);
+    --middle-m-font: 400 36px / 140% var(--font-family);
+    --middle-s-font: 400 25px / 140% var(--font-family);
+    --middle-sx-font: 400 20px / 140% var(--font-family);
+    --middle-font: 400 18px / 140% var(--font-family);
+    --small-font: 400 14px / 140% var(--font-family);
+
+    --font-book: "Intro-Book", sans-serif;
+    --font-p: 400 16px / 140% var(--font-book);
+    --font-small-book: 400 18px / 140% var(--font-book);
+    --font-middle-book: 400 20px / 140% var(--font-book);
+
+    --font-gothman: "GothamPro", sans-serif;
+    --font-geth-main: 700 20px / 140% var(--font-gothman);
+    --font-geth-midl: 700 16px / 140% var(--font-gothman);
+    --font-geth-smal: 300 16px / 140% var(--font-gothman);
+    --font-geth-ex-smal: 300 13px / 140% var(--font-gothman);
+
+    --font-Eurostile-Round: "Eurostile-Round", sans-serif;
+    --font-Eurostile-max: 900 32px / 100% var(--font-Eurostile-Round);
+    --font-Eurostile-main: 900 20px / 140% var(--font-Eurostile-Round);
+    --font-Eurostile-midl: 900 18px / 140% var(--font-Eurostile-Round);
+    --font-Eurostile-small: 900 16px / 140% var(--font-Eurostile-Round);
+  }

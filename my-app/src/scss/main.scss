@@ -1,0 +1,139 @@
+@import './fonts.scss';
+@import './mixins.scss';
+@import './normalise.scss';
+@import './variabels.scss';
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px;
+
+    @include tablet(){
+      padding: 0 30px;
+    }
+}
+
+div.styles_container__38iRH{
+  @include tablet(){
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  ul,
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  body {
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+    }
+ 
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  
+    /* Наследуем шрифты для инпутов и кнопок */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  li{
+      list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  }
+
+
+.btn-reset{
+  padding: 0;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-primery{
+  position: relative;
+  padding: 20px 30px;
+  font: var(--middle-font);
+  transition: 0.2s ease-in;
+  border-radius: 5px;
+  color: white; 
+
+  @include tablet(){
+    padding: 20px 45px;
+  }
+}
+
+.btn--blue{
+  background-color: #0baccd47;
+  transition: 0.2s ease-in;  
+  &:hover{
+    background-color: #6ac2dc;
+  }
+  
+  &:active{
+    background-color: var(--color-Cadet-blue);
+  }
+}
+//============= animation ===============
+
+.hide{
+  opacity: 1;
+  display: none;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1{
+  to {
+    opacity: 0;
+    display: block;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+//============= animation // ===============

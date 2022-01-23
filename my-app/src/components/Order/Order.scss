@@ -1,0 +1,151 @@
+@import '../../scss/main.scss';
+.order{
+    padding: 62px 0px;
+
+    @include desktop(){
+        padding: 97px 0px;     
+    }
+
+    &__hero{
+        margin-bottom: 30px;
+        @include tablet(){
+            display: flex;
+        }
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+    
+    &__back{
+
+        font: var(--font-Eurostile-main);
+        color: var(--color-main);
+        
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        @include tablet(){
+            margin-right: 20px;
+        }
+    }
+
+    &__item{
+        padding: 15px 0;
+        max-width: 520px;
+        border-bottom: 1px solid #B2B5BB;
+
+        @media (min-width: 500px){
+            display: flex;
+        }
+
+    }
+    &__name{
+        font: var(--font-Eurostile-small);
+        font-weight: 700;
+        color: var(--color-main);
+    }
+    &__subtitle, &__size, &__count{
+        font: var(--font-p);
+        font-weight: 700;
+        font-size: 15px;
+        color: var(--color-main);
+    }
+  
+    &__right{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+
+        @media (min-width: 500px){
+            margin-top: unset;
+            width: 23%;
+        }
+    }
+
+    &__left{
+        display: flex;
+        align-items: flex-end;
+
+    }
+    &__left-inner{
+
+        @include tablet() {
+            width: 77%;
+        }
+    }
+
+    &__img{
+        margin-right: 20px;
+        width: 170px;
+    }
+
+    &__sum-title{
+        width: 40%;
+        margin-right: 17px;
+        color: var(--color-main);
+    }
+
+    &__title-wrraper{
+        display: flex;
+    }
+
+    &__title{
+        width: 82%;
+        font: var(--middle-sx-font);
+        color: var(--color-main);
+      
+    }
+
+    &__content{
+        margin-top: 12px;
+      
+        @media (min-width: 400px){
+            padding: 32px 20px 35px 20px;
+            border: 1px solid #B2B5BB;
+        }
+    }
+
+    &__sum{
+        margin-right: 13px;
+        display: flex;
+        align-items: center;
+        
+        font: var(--font-Eurostile-small);
+        color: #363b44;
+    }
+
+    &__sum-label{
+        font: var(--font-Eurostile-midl);
+        color: #B2B5BB;
+        span{
+            font: var(--font-Eurostile-small);
+            color: var(--color-main);
+        }
+    }
+
+    ul.order__list{
+        margin-top: 30px;    
+    }
+}
+
+
+.order__massenger{
+    width: 80%;
+
+    font: var(--font-Eurostile-main);
+    color: var(--color-accent);
+    transform: scale(1);
+
+    @media (max-width: (500px)) {
+        width: 100%;
+    }
+
+}
+
+.order__massenger.hide{
+    transform: scale(0);
+}

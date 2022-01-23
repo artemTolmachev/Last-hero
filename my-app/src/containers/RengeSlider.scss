@@ -1,0 +1,62 @@
+@import '../scss/main.scss';
+
+.filter,.filter-mobile{
+    .noUi-horizontal {
+        height: 1px;
+    }
+    .noUi-target{
+        border: none;
+    }
+    .noUi-horizontal .noUi-handle {
+        width: 8px;
+        height: 14px;
+        right: -7px;
+        top: -1px;
+        border-radius: 0;
+        
+    }
+    .noUi-connect, .noUi-origin {
+        right: 4px;
+        background-color: var(--color-main);
+    }
+    div.noUi-handle.noUi-handle-upper::after{
+        display: none;
+    }
+    div.noUi-handle.noUi-handle-upper::before{
+        display: none;
+    }
+    div.noUi-handle.noUi-handle-lower::after{
+        display: none;
+    }
+    div.noUi-handle.noUi-handle-lower::before{
+        display: none;
+    }
+}
+body.noUi-handle:before{
+    display: none;
+}
+.range-slider__value{
+    display: block;
+}
+.renge-value{
+    margin-top: 7px;
+    position: relative;
+    display: flex;
+    border-top: 1px solid var(--color-main);
+    border-left: 1px solid var(--color-main);
+    border-right: 1px solid var(--color-main);
+    &::after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background-color: var(--color-main);
+    }
+    div{
+        padding: 5px 0;
+        width: 50%;
+        text-align: center;
+    }
+}

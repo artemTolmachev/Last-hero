@@ -1,0 +1,77 @@
+@import '../../scss/main.scss';
+
+.prodact {
+   
+    &__left-container{
+        
+        @include tablet(){
+            padding-right: 30px;
+            width: 60%;
+        }
+
+        .slick-dots li button:before {
+            font-family: 'slick';
+            font-size: 6px;
+            line-height: 20px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--color-main);
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            content: '';
+            text-align: center;
+        }
+    }
+    &__img-main{
+        padding-top: 78px;
+    }
+    &__mob-slider{
+        padding: 20px 0px 40px 0px;
+        @include tablet(){
+            
+            display: none;
+        }
+    }
+    &__left{
+        display: none;
+        
+        @include tablet(){
+            display: block;
+            display: flex;
+            padding-bottom: 78px;
+        }
+    }
+    &__left-list{
+        padding: 0px 10px 0px 0px;
+        width: 32%;
+    }
+    &__img-min{
+        border: 1px solid #444b584f;
+    }
+    &__img-min:not(:first-child){
+        margin-top: 20px;
+    }
+
+    .active{
+        border: 1px solid var(--color-main);
+    }
+}
+button.prodact__card-btn{
+    border: 1px solid var(--color-accent);
+    padding: 10px 20px;
+    color: var(--color-accent);
+    margin-top: 10px;
+    transition: all .2s ease-in;
+
+    &:hover{
+        background-color: var(--color-accent);
+        color: var(--color-white);
+    }
+    &:active{
+        background-color: var(--color-accent-dark);
+        color: var(--color-white);
+    }
+   
+}

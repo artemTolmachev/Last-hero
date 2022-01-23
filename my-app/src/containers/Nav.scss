@@ -1,0 +1,120 @@
+@import '../scss/main.scss';
+
+.nav{
+    &__link{
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      font: var(--font-Eurostile-midl);
+      color: var(--color-white);
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+    }
+
+    &__icn{
+      margin-right: 8px;
+      pointer-events: none;
+    }
+// table ===================================
+
+    @include desktop-extra(){
+      height: fit-content;
+      width: 100%;
+      &__link{
+        border-radius: 5px 0px 0px 5px;
+        &:active{
+          transform: translate(8px,0);
+          color: var(--color-accent);
+        }
+        &:hover{
+          background-color: var(--color-accent);
+        }
+      }
+      
+      &__link{
+        // font: var(--middle-font);
+        &:active{
+          color: var(--color-accent);
+        }
+      }
+    }
+// desctop ===================================
+    @include desktop (){
+      padding: 10px 0;
+      @include flex();
+        &__item{
+         
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+
+        &__icn{
+          display: none;
+        }
+
+        &__link{
+          transition: all 0.1s ease-in-out;
+          position: relative;
+          transition: .2s ease-in;
+          z-index: 9;
+
+          &::after{
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
+            height: 197%;
+            z-index: -1;
+          }
+
+          &:hover::after{
+            background-color: #00000047;
+          }
+        }
+    }
+  }
+
+//====================================================
+@include desktop(){
+  .active__link{
+    // transition: all 0.1s ease-in-out;
+    position: relative;
+    // transition: .2s ease-in;
+    // z-index: 9;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 197%;
+      background-color: #00000047;
+      z-index: -1;
+    }
+  }
+}
+
+
+@include desktop-extra(){
+  .active__link{
+    // transition: all 0.1s ease-in-out;
+    position: relative;
+    // transition: .2s ease-in;
+    // z-index: 9;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-accent);
+      border-radius: 5px 0px 0px 5px;
+      z-index: -1;
+    }
+  }
+}

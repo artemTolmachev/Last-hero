@@ -1,0 +1,53 @@
+@import '../scss/main.scss';
+
+.header {
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  top: 0;
+
+  z-index: 3;
+  background-color: var(--color-main);
+
+  &__left{
+    display: none;
+  }
+
+  &__right{
+    display: none;
+  }
+
+  &__icon{
+    grid-column: 1 span;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  @include desktop(){
+    
+    height: unset;
+  
+    &__container {
+      gap: var(--grid-gap);
+      position: relative;
+    }
+  
+    &__left {
+      display: block;
+      grid-column: 3 span;
+    }
+    
+    &__right{
+      display: flex;
+      justify-content: space-around;
+      grid-column: 8 span;
+    }
+
+  }
+ 
+}
+
