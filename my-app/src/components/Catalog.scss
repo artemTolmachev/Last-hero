@@ -11,6 +11,7 @@
         margin: 0 auto;
         margin-bottom: 40px;
     }
+    
     &__title{
         font-family: var(--font-family);
         font-size: 30px;
@@ -25,14 +26,20 @@
         @include flex-betw();
     }
     &__left{
+        position: relative;
         grid-column: 2 span;
         width: 230px;
-        // display: none;
+        overflow-y: hidden;
         @include mobile-extra (){
             display: none;
             grid-column: 12 span;
         }
     
+    }
+    &__lable-wr{
+        position: absolute;
+        top: 372px;
+        left: 0;
     }
     &__content{
         gap: var(--grid-gap);
