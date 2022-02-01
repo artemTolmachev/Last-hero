@@ -6,7 +6,7 @@
     }
     .slick-dots {
         position: absolute;
-        bottom: 5vh;
+        bottom: 4vh;
 
         @include tablet(){
             bottom: 15vh;
@@ -55,9 +55,11 @@
     
         .slick-prev{
             left: 3vw;
+            z-index: 1;
         }
         .slick-next{
-            right: 3vw;     
+            right: 3vw;
+            z-index: 1;     
         }
     
         .slick-prev:active{

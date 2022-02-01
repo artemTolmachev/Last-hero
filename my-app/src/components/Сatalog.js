@@ -40,7 +40,7 @@ function Сatalog() {
             <div className="catalog__content grid">
               <div className="catalog__left">
                 {desctop ? <Filter/> : null}
-                <div className="catalog__lable-wr">
+                {/* <div className="catalog__lable-wr">
                   <div className="catalog__lable">
                     <img src={process.env.PUBLIC_URL + `images/catalog-lable/lable01.png`} alt="Кроссовки"/>
                   </div>
@@ -60,7 +60,7 @@ function Сatalog() {
                     <img src={process.env.PUBLIC_URL + `images/catalog-lable/lable07.png`} alt="Кроссовки"/>
                   </div>
               
-                </div>
+                </div> */}
               </div>
               <div className="catalog__grid">
                 <GoodsList/>
