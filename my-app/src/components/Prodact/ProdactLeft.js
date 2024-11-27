@@ -30,7 +30,6 @@ function ProdactLeft(props) {
             }
         }
         refMain.current.children[0].src = t.src; //main img ровняется img по которому кликнули
-        console.log(refMain.current)
         let perentElement = t.parentNode;
         perentElement.classList.add('active');
     }
