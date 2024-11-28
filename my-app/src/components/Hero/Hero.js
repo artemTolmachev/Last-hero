@@ -31,12 +31,12 @@ function Hero(event) {
     slidesToScroll: 1,
 
     afterChange: function (index) {
-      index !== 0 ? setPassR(false) : setPassR(true)
-      index !== 1 ? setPassT(false) : setPassT(true)
-      index !== 2 ? setPassS(false) : setPassS(true)
-      index !== 3 ? setPassA(false) : setPassA(true)
-      index !== 4 ? setPassK(false) : setPassK(true)
-      index !== 5 ? setPassD(false) : setPassD(true)
+      index !== 0 ? setPassR(false) : setPassR(true);
+      index !== 1 ? setPassT(false) : setPassT(true);
+      index !== 2 ? setPassS(false) : setPassS(true);
+      index !== 3 ? setPassA(false) : setPassA(true);
+      index !== 4 ? setPassK(false) : setPassK(true);
+      index !== 5 ? setPassD(false) : setPassD(true);
     }
   };
 
