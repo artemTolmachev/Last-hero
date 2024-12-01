@@ -9,7 +9,7 @@ function CartIcon() {
 
   const cart = useSelector(selectCart);
 
-  let sum = Object.keys(cart).map(item => { return cart[item].count}).reduce((a, b) => a + b, 0) //получаем масив значений объекта
+  let sum = Object.keys(cart).map(item => { return cart[item].count}).reduce((a, b) => a + b, 0)
     return (
       <>
         <div className="cart header__cart">
