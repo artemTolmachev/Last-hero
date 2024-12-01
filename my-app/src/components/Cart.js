@@ -3,6 +3,7 @@ import {FaTrashAlt} from "react-icons/fa";
 import React from "react"
 import { FaMinus, FaPlus } from "react-icons/fa";
 function Cart(props) {
+
     return (
       <>
         <li className="cart__item" >

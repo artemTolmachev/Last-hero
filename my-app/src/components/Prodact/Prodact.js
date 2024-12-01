@@ -4,6 +4,7 @@ import ProdactRight from "./ProdactRight";
 import ProdactTabs from './ProdactTabs';
 import ProdactDelivery from './ProdactDelivery';
 import {Link} from 'react-router-dom';
+
 function Prodact(props) {
 
     return (

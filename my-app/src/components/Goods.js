@@ -17,7 +17,6 @@ function Goods(props) {
   });
 
   let sizen = Object.keys(props.size).filter(el => props.size[el] > 0);
- 
       return (
         <>
           <Link  to={`/${props.articul}`} className={x ? 'goods__card' : 'hide'} data-c={props.gender} data-key={props.articul}>

@@ -49,6 +49,7 @@
     }
     &__img-min{
         border: 1px solid #444b584f;
+        cursor: pointer;
     }
     &__img-min:not(:first-child){
         margin-top: 20px;
